@@ -25,10 +25,16 @@ private:
         last = "";
     }
     
-    void setFirst(string f)
-    {   first = f;      }
-    void setLast(string l)
-    {   last = l;       }
+    void setFirst(string f) {
+      if(f.length() >= 2)
+        first = f;
+    }
+  
+    void setLast(string l) {
+      if(f.length() >= 2)
+        last = l;
+    }
+  
     void setBirth( int m, int d, int y)
     {
         Date b(m, d, y);
