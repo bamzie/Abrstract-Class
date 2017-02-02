@@ -30,10 +30,10 @@ double totalHours(vector<T> e) {
 
 int main()
 {
-    Person dude;
-    vector<Person> pvect;
+    Employee dude;
     vector<Employee> evect;
     int day, month, year;
+    double hours;
     string name;
     
     for (int i = 0; i < 5; i++)
@@ -41,16 +41,21 @@ int main()
         cout << "What is the first name of your employee? ";
         getline(cin, name);
         dude.setFirst(name);
+        cin.ignore();
         
         cout << "What is the person's last name? ";
         getline(cin, name);
         dude.setLast(name);
+        cin.ignore();
         
         cout << "What month, day, and year is your birthday? ";
         cin >> month >> day >> year;
         dude.setBirth(month, day, year);
+        cin.ignore();
         
-        
+        cout << "How many hours has this employee worked? ";
+        cin >> hours;
+        dude.setHrs(hours);
         
         
     }
