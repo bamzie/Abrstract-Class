@@ -9,7 +9,7 @@
 #include "Employee.h"
 
 template<typename T>
-double totalHours(vector<Employee> e) {
+double totalHours(vector<T> e) {
   double sum = 0;
   for(int i = 0; i < e.size(); i++) {
     sum += e.at(i).getHrs();
@@ -18,7 +18,7 @@ double totalHours(vector<Employee> e) {
 }
 
 template<typename T>
-double totalHours(vector<T> e) {
+double avgHours(vector<T> e) {
   double sum = 0;
   double avg = 0;
   for(int i = 0; i < e.size(); i++) {
@@ -51,16 +51,20 @@ int main()
         cout << "What month, day, and year is your birthday? ";
         cin >> month >> day >> year;
         dude.setBirth(month, day, year);
-        cin.ignore();
         
         cout << "How many hours has this employee worked? ";
         cin >> hours;
         dude.setHrs(hours);
-        
-        
     }
     
-    
-    
+    vector<Employee>::iterator iter;
+  
+    for(iter = evect.begin(); iter != evect.end(); iter++) {
+      iter->print();
+      cout << "----------------" << endl;
+    }
+  
+    cout << "Total hours worked by employees: " << totalHours(evect) << endl;
+    cout << "Average hours per employee: " << avgHours(evect) << endl;
     
 }
