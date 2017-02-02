@@ -1,5 +1,6 @@
 #ifndef Date_h
 #define Date_h
+using namespace std;
 
 class Date {
 protected:
@@ -27,6 +28,11 @@ public:
     { return month; }
   int getYear() const
     { return year; }
+  string getDate() const {
+    string date;
+    date << month << "/" << day < "/" << year;
+    return date;
+  }
 };
 
 #endif
