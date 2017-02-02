@@ -18,7 +18,7 @@ double totalHours(vector<Employee> e) {
 }
 
 template<typename T>
-double totalHours(vector<T> e) {
+double avgHours(vector<T> e) {
   double sum = 0;
   double avg = 0;
   for(int i = 0; i < e.size(); i++) {
