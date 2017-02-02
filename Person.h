@@ -25,11 +25,15 @@ public:
     void setFirst(string f) {
       if(f.length() >= 2)
         first = f;
+      else
+        throw "error";
     }
   
     void setLast(string l) {
       if(l.length() >= 2)
         last = l;
+      else
+        throw "error";
     }
   
     void setBirth( int m, int d, int y)

@@ -38,6 +38,7 @@ int main()
     
     for (int i = 0; i < 5; i++)
     {
+      try {
         cout << "What is the first name of your employee? ";
         getline(cin, name);
         dude.setFirst(name);
@@ -55,10 +56,13 @@ int main()
         cout << "How many hours has this employee worked? ";
         cin >> hours;
         dude.setHrs(hours);
+        
+      } catch("error") {
+        i--;
+      }
     }
     
     vector<Employee>::iterator iter;
-  
     for(iter = evect.begin(); iter != evect.end(); iter++) {
       iter->print();
       cout << "----------------" << endl;
