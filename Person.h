@@ -10,12 +10,14 @@
 #define Person_hpp
 #include <stdio.h>
 #include <string>
+#include "Date.h"
 using namespace std;
 class Person
 {
 private:
     string first;
     string last;
+    Date birthday;
 private:
     Person()
     {
@@ -27,6 +29,11 @@ private:
     {   first = f;      }
     void setLast(string l)
     {   last = l;       }
+    void setBirth( int m, int d, int y)
+    {
+        Date b(m, d, y);
+        birthday = b;
+    }
     
     string getFirst() const
     {   return first;   }
