@@ -31,7 +31,7 @@ public:
     { return month; }
   int getYear() const
     { return year; }
-  void getDate() const
+  void getDate()
     {
     cout << month << "/" << day << "/" << year;
     }

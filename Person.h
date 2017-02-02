@@ -31,7 +31,7 @@ public:
     }
   
     void setLast(string l) {
-      if(f.length() >= 2)
+      if(l.length() >= 2)
         last = l;
     }
   
@@ -39,6 +39,10 @@ public:
     {
         Date b(m, d, y);
         birthday = b;
+    }
+  
+    Date getBirth() const {
+      return birthday;
     }
     
     string getFirst() const

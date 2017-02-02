@@ -6,10 +6,7 @@
 #ifndef Employee_h
 #define Employee_h
 #include "Person.h"
-<<<<<<< Updated upstream
 using namespace std;
-=======
->>>>>>> Stashed changes
 
 class Employee : public Person {
 private:
@@ -26,7 +23,9 @@ public:
     { hrsWorked = hrs; }
   void print() {
     cout << "Worker: " << getFirst() << " " << getLast() << endl;
-    cout << "Birthday: " << birthday.getDate() << endl;
+    cout << "Birthday: ";
+    getBirth().getDate();
+    cout << endl;
     cout << "Hours worked: " << getHrs() << endl;
   }
 };
