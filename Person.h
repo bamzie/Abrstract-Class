@@ -18,7 +18,7 @@ private:
     string first;
     string last;
     Date birthday;
-private:
+public:
     Person()
     {
         first = "";

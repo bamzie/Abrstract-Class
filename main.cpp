@@ -7,7 +7,15 @@
 //
 
 #include <iostream>
+#include "Person.h"
+#include "Employee.h"
 
-int main() {
-   
+int main()
+{
+    Person dude;
+    
+    cout << "What is the first name of your employee? ";
+    cin.get();
+    
+    
 }

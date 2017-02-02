@@ -6,7 +6,10 @@
 #ifndef Employee_h
 #define Employee_h
 #include "Person.h"
+<<<<<<< Updated upstream
 using namespace std;
+=======
+>>>>>>> Stashed changes
 
 class Employee : public Person {
 private:
