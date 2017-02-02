@@ -16,6 +16,7 @@ int main()
     
     cout << "What is the first name of your employee? ";
     cin.get();
+    cout << "okay!!";
     
     
 }

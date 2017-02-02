@@ -8,6 +8,7 @@
 #include "Person.h"
 using namespace std;
 
+
 class Employee : public Person {
 private:
   int hrsWorked;
@@ -24,6 +25,7 @@ public:
   void print() {
     cout << "Worker: " << getFirst() << " " << getLast() << endl;
     cout << "Birthday: ";
+
     getBirth().getDate();
     cout << endl;
     cout << "Hours worked: " << getHrs() << endl;
