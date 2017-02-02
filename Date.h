@@ -1,3 +1,8 @@
+//
+//  Peter Chudinov (pj6593), Brian Moralez (kp5575)
+//  Person : Employee : Templates
+//
+
 #ifndef Date_h
 #define Date_h
 using namespace std;

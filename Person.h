@@ -1,9 +1,6 @@
 //
-//  Person.hpp
-//  Abrstract Class
-//
-//  Created by Brian Morales on 2/1/17.
-//  Copyright © 2017 Brian Morales. All rights reserved.
+//  Peter Chudinov (pj6593), Brian Moralez (kp5575)
+//  Person : Employee : Templates
 //
 
 #ifndef Person_hpp

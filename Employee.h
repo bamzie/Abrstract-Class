@@ -1,6 +1,6 @@
 //
 //  Peter Chudinov (pj6593), Brian Moralez (kp5575)
-//  homework 4: 5
+//  Person : Employee : Templates
 //
 
 #ifndef Employee_h
@@ -11,7 +11,7 @@ using namespace std;
 
 class Employee : public Person {
 private:
-  int hrsWorked;
+  double hrsWorked;
   bool validHrs(int hrs) {
     if(hrs >= 0) {
       return true;
