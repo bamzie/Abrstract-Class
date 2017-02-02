@@ -21,11 +21,15 @@ public:
   int getHrs()
     { return hrsWorked; }
   void setHrs(int hrs)
-    { hrsWorked = hrs; }
+    { if(validHrs(hrs))
+        hrsWorked = hrs;
+      else
+        throw "error";
+    }
   void print() {
     cout << "Worker: " << getFirst() << " " << getLast() << endl;
     cout << "Birthday: ";
-    getBirth();
+    getBirth().getDate();
     cout << endl;
     cout << "Hours worked: " << getHrs() << endl;
   }

@@ -11,8 +11,8 @@
 template<typename T>
 double totalHours(vector<T> e) {
   double sum = 0;
-  for(int i = 0; i < e.size(); i++) {
-    sum += e.at(i).getHrs();
+  for(T i : e) {
+    sum += i.getHrs();
   }
   return sum;
 }
@@ -21,8 +21,8 @@ template<typename T>
 double avgHours(vector<T> e) {
   double sum = 0;
   double avg = 0;
-  for(int i = 0; i < e.size(); i++) {
-    sum += e.at(i).getHrs();
+  for(T i : e) {
+    sum += i.getHrs();
   }
   avg = sum / e.size();
   return avg;
@@ -57,13 +57,16 @@ int main()
         cin >> hours;
         dude.setHrs(hours);
         
-      } catch(string lol) {
+        evect.push_back(dude);
+        
+      } catch(const char* lol) {
         cout << lol << endl;
         i--;
       }
     }
     
     vector<Employee>::iterator iter;
+    cout << endl;
     for(iter = evect.begin(); iter != evect.end(); iter++) {
       iter->print();
       cout << "----------------" << endl;
