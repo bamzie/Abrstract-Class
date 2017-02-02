@@ -25,7 +25,6 @@ public:
   void print() {
     cout << "Worker: " << getFirst() << " " << getLast() << endl;
     cout << "Birthday: ";
-
     getBirth();
     cout << endl;
     cout << "Hours worked: " << getHrs() << endl;

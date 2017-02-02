@@ -33,31 +33,32 @@ int main()
     Employee dude;
     vector<Employee> evect;
     int day, month, year;
-    double hours;
     string name;
     
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 2; i++)
     {
       try {
         cout << "What is the first name of your employee? ";
-        getline(cin, name);
-        dude.setFirst(name);
-        cin.ignore();
+        string first;
+        cin >> first;
+        dude.setFirst(first);
         
         cout << "What is the person's last name? ";
-        getline(cin, name);
-        dude.setLast(name);
-        cin.ignore();
+        string last;
+        cin >> last;
+        dude.setLast(last);
         
         cout << "What month, day, and year is your birthday? ";
         cin >> month >> day >> year;
         dude.setBirth(month, day, year);
         
         cout << "How many hours has this employee worked? ";
+        double hours;
         cin >> hours;
         dude.setHrs(hours);
         
-      } catch("error") {
+      } catch(string lol) {
+        cout << lol << endl;
         i--;
       }
     }
