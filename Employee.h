@@ -5,7 +5,8 @@
 
 #ifndef Employee_h
 #define Employee_h
-#include "Person.hpp"
+#include "Person.h"
+using namespace std;
 
 class Employee : public Person {
 private:
@@ -21,7 +22,9 @@ public:
   void setHrs(int hrs)
     { hrsWorked = hrs; }
   void print() {
-    
+    cout << "Worker: " << getFirst() << " " << getLast() << endl;
+    cout << "Birthday: " << birthday.getDate() << endl;
+    cout << "Hours worked: " << getHrs() << endl;
   }
 };
 
