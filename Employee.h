@@ -26,7 +26,7 @@ public:
     cout << "Worker: " << getFirst() << " " << getLast() << endl;
     cout << "Birthday: ";
 
-    getBirth().getDate();
+    getBirth();
     cout << endl;
     cout << "Hours worked: " << getHrs() << endl;
   }
